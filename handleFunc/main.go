@@ -13,7 +13,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	} else {
 		w.WriteHeader(http.StatusNotFound)
 		w.Write([]byte("route not found"))
-		fmt.Fprintf(w, "route not found")
+		// fmt.Fprintf(w, "route not found")
 	}
 }
 
